@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toDoList</title>
+    <link rel="stylesheet" href="/dist/styles/index.css">
+    <link rel="stylesheet" href="./styles/project.css">
+    <link rel="stylesheet" href="./styles/task.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+    <link rel="stylesheet" href="./styles/task_modal.css">
+    <link rel="stylesheet" href="./styles/edit.css">
+</head>
+<body>
+    <div id="logo-bar">
+        <h2>toDoList</h2>
+    </div>
+    <div id="content">
+        <div id="projects-side">
+            <div id="project-bar">
+                <p>PROJECTS</p>
+                <span id="open-project-modal"><img src="https://image.flaticon.com/icons/svg/20/20362.svg" alt="add project"></span>
+            </div>
+            <div id="projects-wrapper">
+            </div>
+        </div>
+        <div id="tasks-side">
+            <div id="task-bar">
+            <span id="open-task-modal"><img src="https://image.flaticon.com/icons/svg/20/20362.svg" alt=""></span>
+            </div>
+            <div id="tasks-wrapper">
+                    <div class="trash-icon">
+                        <img src="https://image.flaticon.com/icons/svg/860/860778.svg" alt="">
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <div id="modal">
+        <div id="modal-content">
+            <label for="">
+                <p>Name:</p>
+                <input id="project-input" type="text">
+            </label>
+
+            <div class="buttons">
+                <a href="#" id="new-project-button">ADD</a>
+                <a href="#" id="close-project-modal">Cancel</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="task-modal">
+        <div id="task-modal-content">
+            <div id="name">
+                <label for="">
+                    <p>Name:</p>
+                    <input id="task-name" type="text">
+                </label>
+            </div>
+
+            <div id="dateAndpriority">
+                <div class="date-input-wrapper">
+                    <label for="">
+                        <p>Date:</p>
+                        <input id="task-date" type="date">
+                    </label>
+                </div>
+    
+                <div id="select-wrapper">
+                    <label for="Priority">Priority:
+                        <select  id="priority">
+                            <option value="High">High</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Low">Low</option>
+                        </select>
+
+                    </label>
+                </div>
+            </div>
+            <div id="detail">
+                <label for="">Detail:
+                </label>
+                <textarea name="" id="task-detail" cols="30" rows="10"></textarea>
+            </div>
+
+            <div id="task-modal-buttons">
+                <button id="new-task-button">Add</button>
+                <a id="close-task-modal" href="#">Cancelar</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="edit-modal">
+        <div id="edit-modal-content">
+            <div id="name">
+                <label for="">
+                    <p>Name:</p>
+                    <input id="edit-name" type="text">
+                </label>
+            </div>
+
+            <div id="dateAndpriority">
+                <div class="date-input-wrapper">
+                    <label for="">
+                        <p>Date:</p>
+                        <input id="edit-date" type="date">
+                    </label>
+                </div>
+    
+                <div id="select-wrapper">
+                    <label for="Priority">Priority:
+                        <select  id="priority-2">
+                            <option value="High">High</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Low">Low</option>
+                        </select>
+
+                    </label>
+                </div>
+            </div>
+            <div id="detail">
+                <label for="">Detail:
+                </label>
+                <textarea name="" id="edit-detail" cols="30" rows="10"></textarea>
+            </div>
+
+            <div id="edit-modal-buttons">
+                <button id="new-edit-button">Add</button>
+                <a id="close-edit-modal" href="#">Close</a>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="./main.js"></script>
+</body>
+</html>

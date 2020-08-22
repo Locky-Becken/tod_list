@@ -1,0 +1,68 @@
+
+#content #tasks-side{
+    width: 100%;
+
+    margin: 20px;
+}
+
+#content #tasks-side #tasks-wrapper {
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+#content #tasks-side #tasks-wrapper .task{
+    
+     /* display: flex;
+    justify-content: space-around;  */
+
+    display: grid;
+    grid-template-columns: auto 150px 200px;
+    align-items: center;
+    overflow: hidden;
+
+    gap: 20px;
+
+    width: 100%;
+
+    margin-bottom: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.task .edit-div {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    border-radius: 6px;
+
+    text-align: center;
+}
+
+#content #tasks-side #tasks-wrapper .task p{
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+#content #tasks-side #tasks-wrapper .task .task-check{
+    display: flex;
+    align-items: center;
+}
+
+
+#task-bar span img{
+    width: 50px;
+    height: 50px;
+
+    position: fixed;
+    right: 0;
+    bottom: 0;
+
+    margin: 40px;
+    cursor: pointer;
+    
+}
